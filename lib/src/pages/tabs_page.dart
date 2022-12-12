@@ -5,6 +5,18 @@ class TabsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: PageView(
+        physics: const BouncingScrollPhysics(),
+        children: [
+          Container(
+            color: Colors.red,
+          ),
+          Container(
+            color: Colors.amber,
+          )
+        ],
+      ),
+    );
   }
 }
